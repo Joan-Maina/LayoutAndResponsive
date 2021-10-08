@@ -5,7 +5,7 @@ body {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 300px;
   grid-template-rows: 1fr 5fr 2fr;
   grid-template-areas:
     "header  header"
@@ -18,25 +18,64 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: blue;
+  background-color: white;
 }
 .sidenav {
   grid-area: sidenav;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
-  background-color: chartreuse;
+  background-color: whitesmoke;
 }
 .footer {
   grid-area: footer;
-  background-color: brown;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 .main {
   grid-area: main;
-  background-color: blueviolet;
+  background-image: url("Capture.PNG");
+  margin-left: 4px;
+}
+
+.home,
+.about,
+.services,
+.contact {
+  padding: 20px;
+  width: 240px;
+  background-color: rgb(233, 225, 225);
+  box-shadow: 2px 2px 5px 5px rgb(206, 205, 205);
+}
+button {
+  background-color: black;
+  color: azure;
+  padding: 10px;
+}
+i {
+  color: black;
+}
+.support,
+.development,
+.marketing,
+.analytics {
+  padding: 20px;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(233, 225, 225);
+  box-shadow: 2px 2px 5px 5px rgb(206, 205, 205);
+}
+.membership1,
+.membership2 {
+  padding: 20px;
+  width: 200px;
+  height: 140px;
+  background-color: rgb(233, 225, 225);
+  box-shadow: 2px 2px 5px 5px rgb(206, 205, 205);
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -52,7 +91,11 @@ body {
   /* .main {
     background-color: chartreuse;
   } */
-  .header {
+  .header,
+  .footer {
     flex-direction: column;
+  }
+  .sidenav {
+    flex-direction: row;
   }
 }
