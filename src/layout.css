@@ -77,6 +77,16 @@ i {
   background-color: rgb(233, 225, 225);
   box-shadow: 2px 2px 5px 5px rgb(206, 205, 205);
 }
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.email,
+.phonenumber {
+  border-style: double;
+  margin: 20px;
+}
 @media only screen and (max-width: 768px) {
   .container {
     min-height: 100vh;
